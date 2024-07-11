@@ -2100,6 +2100,21 @@
 
 /* Fin Servicios */
 
+@media (max-width: 1440px){
+
+    /* Home */
+
+    .cont_Banner h1{
+        max-width: 80%;
+        width: max-content;
+        font-size: 6rem;
+        letter-spacing: 3px;
+    }
+
+    /* Fin Home*/
+
+}
+
 @media (max-width: 1280px){
 
     /* Home*/
@@ -2151,6 +2166,29 @@
             width: 100%;
             height: calc(100% / 2);
         }
+
+        .arquitec_tipo{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .arquitec_lista{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .arq_blitem > img{
+            filter: grayscale(60%);
+        }
+
+        .arq_blitem:hover > img{
+            filter: grayscale(60%);
+        }
+
+        .arq_blitem:nth-child(n){
+            grid-column-start: span 1;
+        }
+
+        
 
     /*  Fin Proyecto */    
 
@@ -2318,6 +2356,15 @@
 
     /* Fin Home */
 
+    /* Banner */
+    
+    .cont_Banner h1 {
+        font-size: 2.75rem;
+        letter-spacing: 3px;
+    }
+
+    /* Fin Banner*/
+
     /* Footer */
 
     .foo_lft{
@@ -2340,13 +2387,12 @@
 
     /* Proyecto */
 
-    .cont_Banner h1{
-        font-size: 4rem;
-        letter-spacing: 4px;
-    }
-
     .cont_item > p{
         bottom: 2rem;
+    }
+
+    .arquitec_lista{
+        grid-template-columns: repeat(1, 1fr);
     }
 
     /* Fin Proyecto */
@@ -2416,8 +2462,18 @@
 
     .lft_bl3 p{
         font-size: 1.625rem;
+        gap: 2rem;
     }
 
+    .foo_Redes a{
+        width: 2.8125rem;
+        height: 2.8125rem;
+    }
+
+    .menu_logo a{
+        width: 3.75rem;
+        height: 2.3125rem;
+    }
 
     /* Fin Footer */
 
