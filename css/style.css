@@ -2400,16 +2400,26 @@
 
     /* Proyecto */
 
-    .cont_item > p{
-        bottom: 2rem;
-    }
-
     .arquitec_menu{
         margin: 2rem 0;
     }
 
     .arquitec_lista{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cont_item > p{
+        max-width: 100%;
+        padding: 1rem;
+        bottom: 0;
+    }
+
+    .cont_item:nth-child(1) > p{
+        right: 0;
+    }
+
+    .cont_item:nth-child(2) > p{
+        left: 0;
     }
 
     /* Fin Proyecto */
@@ -2456,7 +2466,7 @@
     /* Banner */
 
     .cont_Banner h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
         width: max-content;
         max-width: 80%;
         letter-spacing: 2px;
