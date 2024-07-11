@@ -25,13 +25,13 @@ window.addEventListener("load", function (event) {
 
         if(list_class === 'desplegado' ){
             navbar_mn_list.classList.remove("desplegado");
-            document.body.style.overflowY = 'hidden';
+            document.body.style.overflowY = 'scroll';
         }
         else{
             if(list_class !== 'desplegado')
             {
                 navbar_mn_list.classList.add("desplegado");
-                document.body.style.overflowY = 'scroll';
+                document.body.style.overflowY = 'hidden';
             }
             
         }
