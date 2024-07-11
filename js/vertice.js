@@ -17,16 +17,28 @@ if (window.scrollY >= 300) {
 
 const navbar_mn = document.querySelector('.mn_mv_logo');
 const navbar_mn_list = document.querySelector('.lista_movil');
-navbar_mn.addEventListener("click", (e)=>{
-    if(navbar_mn_list.style.left === '100%'){
-        navbar_mn_list.style.left = '0px';
-        document.body.style.overflowY = 'hidden';
-    }
-    else{
-        navbar_mn_list.style.left = '100%';
-        document.body.style.overflowY = 'scroll';
-    }
+
+window.addEventListener("load", function (event) {
+    navbar_mn.addEventListener("click", (e)=>{
+        
+        var list_class = navbar_mn_list.classList[1] ;
+
+        if(list_class === 'desplegado' ){
+            navbar_mn_list.classList.remove("desplegado");
+            document.body.style.overflowY = 'hidden';
+        }
+        else{
+            if(list_class !== 'desplegado')
+            {
+                navbar_mn_list.classList.add("desplegado");
+                document.body.style.overflowY = 'scroll';
+            }
+            
+        }
+    });
 });
+
+
 
 
 //proyectos arquitectura
@@ -122,8 +134,8 @@ if(tip_todo){
 
 const tip_bim_todo = document.getElementById('tp_all_bim');
 const tip_bim_curso = document.getElementById('tp_cursos');
-const tip_bim_implement = document.getElementById('tp_modelado');
-const tip_bim_modelo = document.getElementById('tp_implementacion');
+const tip_bim_implement = document.getElementById('tp_implementacion');
+const tip_bim_modelo = document.getElementById('tp_modelado');
 
 if(tip_bim_todo){
 
