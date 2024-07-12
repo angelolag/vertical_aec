@@ -3061,6 +3061,10 @@
         height: 16rem;
     }
 
+    .img_trabajamos{
+        height: 18rem;
+    }
+    
 
     /* Fin Proceso */
 
@@ -3093,8 +3097,45 @@
         font-size: 1.5rem;
     }
 
-
     /* Fin Footer */
+
+
+    /* Proceso */
+
+    .proc_bl1 > p {
+        font-size: 1.2rem;
+    }
+
+    .trba_item h3 {
+        font-size: 1.5rem;
+    }
+
+    .trba_item p {
+        font-size: 1.2rem;
+    }
+    
+    .proc_bl2 {
+        height: 20rem;
+    }
+
+    .sec_trabajamos > h3{
+        line-height: 1.2;
+    }
+
+    .list_trabajamos{
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .trba_item{
+        width: 100%;
+    }
+
+    .mv_item_lineas{
+        display: none;
+    }
+
+    /* Fin Proceso*/
 
 }
 
