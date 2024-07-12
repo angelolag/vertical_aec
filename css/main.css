@@ -1,6 +1,6 @@
 :root{
     --colorbase: #DAA70B;
-    --colorbase2: #58788c;
+    --colorbase2: rgba(218, 167, 11, .5);
     --colorbase3: #253c59;
     --plyr-color-main: #DAA70B;
 }

@@ -640,23 +640,28 @@
     }
 
     .cursos_Selector > a{
+        display: flex;
         width: 50%;
-        padding: 2.0625rem 0;
+        border: 1px solid transparent;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cursos_Selector > a:hover{
+        border: 1px solid var(--colorbase2);
+        background-color: var(--colorbase2);
+    }
+
+    .cursos_Selector > a > p{
         font-size: 2.125rem;
         font-family: 'Artifakt Element Book';
         color: #fff;
         border: 1px solid transparent;
         text-align: center;
-        align-content: center;
+        margin: 0;
     }
 
-
-
-    .cursos_Selector > a:hover{
-        border: 1px solid var(--colorbase);
-        background-color: var(--colorbase);
-        opacity: 0.9;
-    }
 
     /* Fin Button Curso*/
 
@@ -1126,6 +1131,7 @@
 
     .proyect_list > div{
         display: flex;
+        width: 6.875rem;
         flex-direction: column;
         justify-content: flex-start;
         text-align: center;
@@ -2113,6 +2119,13 @@
 
     /* Fin Home*/
 
+    /* Servicios */
+
+    .sec_servicios{
+        gap: 10rem;
+    }
+
+    /* Fin Servicios*/
 }
 
 @media (max-width: 1280px){
@@ -2126,6 +2139,18 @@
 
     /* Fin Home*/
     
+    /* Servicios */
+
+    .sec_servicios{
+        gap: 8rem;
+    }
+
+    .servc_bl_titular > h3{
+        line-height: .8;
+    }
+
+    /* Fin Servicios*/
+
 }
 
 @media (max-width: 1024px){
@@ -2322,6 +2347,45 @@
 
 }
 
+@media (max-width: 912px){
+
+    /* Servicios */
+
+    .servc_bl_titular > h3{
+        font-size: 3.125rem;
+    }
+
+    .servc_bl_superior > p{
+        font-size: 1.625rem;
+    }
+
+    .servc_inf_item{
+        flex-direction: column !important;
+        gap: 3rem;
+    }
+
+    .servc_inf_item_1{
+        width: 100%;
+    }
+
+    .servc_inf_item_2{
+        width: 100%;
+    }
+
+    .servc_inf_item_1 > span{
+        text-align: start !important;
+    }
+
+    .servc_inf_item_1 > p{
+        text-align: start !important;
+    }
+
+
+    /* Fin Servicios */
+
+
+}
+
 @media (max-width: 850px){
 
     /* Banner */
@@ -2330,6 +2394,32 @@
         font-size: 3rem;
         letter-spacing: 3px;
     }
+
+    .proyect_list{
+        width: 90%;
+        justify-content: center;
+        overflow-x: scroll;
+    }
+
+    .servi_button{
+        height: 5rem;
+    }
+
+    .cursos_Selector > a{
+        font-size: 1.5rem;
+        border: 1px solid var(--colorbase2);
+        background-color: var(--colorbase2);
+    }
+
+    .cursos_Selector > a:hover {
+        border: 1px solid var(--colorbase2);
+        background-color: var(--colorbase2);
+    }
+
+    .cursos_Selector > a > p{
+        font-size: 1.5rem;
+    }
+
 
     /* Fin Banner*/
 
@@ -2343,7 +2433,25 @@
         width: 11.875rem;
     }
 
+    .arq_blitem > div{
+        padding: 1.5rem;
+    }
+
     /* Fin Proyectos */
+
+    /* Servicios */
+
+    .servc_bl_inferior {
+        gap: 5rem;
+    }
+
+    .sec_servicios {
+        gap: 5rem;
+    }
+
+    /* Fin Servicios */
+
+        
 }
 
 @media (max-width: 600px){
@@ -2422,7 +2530,51 @@
         left: 0;
     }
 
+    .arquitec_tipo{
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .arquitec_tipo > div{
+        padding: 0.625rem;
+    }
+
     /* Fin Proyecto */
+
+    /* Servicios */
+
+    .servc_bl_superior > p {
+        font-size: 1.5rem;
+    }
+
+    .servc_bloque{
+        gap: 4rem;
+    }
+
+    .servc_inf_item_1 > p{
+        font-size: 2.3125rem;
+    }
+
+    .servc_inf_item_1 > span{
+        font-size: 1.5rem;
+    }
+
+    .servc_lineas > div {
+        width: 0.875rem;
+        height: 7.8125rem;
+    }
+
+    .servc_lineas {
+        gap: 1.125rem;
+    }
+
+    .servc_bl_titular > h3 {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+
+    /* Fin Servicios */
 
 }
 
@@ -2457,6 +2609,10 @@
     .sup_item_name:hover > div{
         width: 2.5rem;
         height: 2.5rem;
+    }
+
+    .cursos_Selector > a > p {
+        font-size: 1.2rem;
     }
 
 }
@@ -2532,16 +2688,57 @@
 
     /* Fin Proyectos */
 
+    /* Servicios */
+
+    .servc_bl_superior > p {
+        font-size: 1.375rem;
+    }
+
+    .servc_bloque{
+        gap: 3.75rem;
+    }
+
+    .servc_inf_item_1 > p{
+        font-size: 2.1875rem;
+    }
+
+    .servc_inf_item_1 > span{
+        font-size: 1.375rem;
+    }
+
+    .servc_lineas > div {
+        width: 0.875rem;
+        height: 6.875rem;
+    }
+
+    .servc_lineas {
+        gap: 0.875rem;
+    }
+
+    .servc_bl_titular > h3 {
+        font-size: 2.125rem;
+    }
+
+    /* Fin Servicios */
+
 }
 
 @media (max-width: 390px){
+
+    /* Banner */
     .cont_Banner h1{
-        font-size: 2rem;
+        font-size: 1.5625rem;
     }
 
     .cont_item > p{
         font-size: 1.25rem;
     }
+
+    .cursos_Selector > a > p {
+        font-size: 0.95rem;
+    }
+
+    /* Fin Banner */
 
     /* Footer */
 
@@ -2555,5 +2752,6 @@
 
 
     /* Fin Footer */
+
 }
 
