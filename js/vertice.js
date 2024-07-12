@@ -199,3 +199,37 @@ if(tip_bim_todo){
 
 
 
+// nosotros
+
+
+const btn_persona1 = document.querySelectorAll(".pers_listado_button");
+const desc_persona1 = document.querySelector(".nst_desc1");
+
+window.addEventListener("load", function (event) {
+    if(btn_persona1){
+
+        for (var i = 0; i < btn_persona1.length; i++) {
+            btn_persona1[i].addEventListener('click', function(e) {
+
+                var descript = e.target.parentElement.parentElement.querySelector(".pers_item_descrip");
+                var redes = e.target.parentElement.parentElement.querySelector(".pers_item_link");
+                var list_class = descript.classList[1] ;
+
+                if(list_class === 'nst_activo' ){
+                    descript.classList.remove("nst_activo");
+                    redes.classList.remove("nst_activo");
+                }
+                else{
+                    if(list_class !== 'nst_activo'){
+                        descript.classList.add("nst_activo");
+                        redes.classList.add("nst_activo");
+                    }
+                }
+                
+            });
+        }
+    }
+});
+
+
+
