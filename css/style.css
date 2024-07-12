@@ -1559,6 +1559,10 @@
     gap: 1rem;
 }
 
+.mv_itm{
+    display: none;
+}
+
 .trba_item span{
     margin: 0;
     font-family: 'Artifakt Element Bold';
@@ -2506,6 +2510,25 @@
         height: auto;
     }
 
+    .mv_itm{
+        display: flex;
+    }
+
+    .mv_item_lineas{
+        display: flex;
+        top: -15.3rem;
+        right: 2.8rem;
+        gap: 2.625rem;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .mv_item_lineas > div{ 
+        width: 1.875rem;
+        height: 15.3125rem;
+        background-color: var(--colorbase);
+    }
+
     /* Fin Proceso */
 
 }
@@ -3001,6 +3024,45 @@
     }
 
     /* Fin Servicios */
+
+    /* Proceso */
+
+    .sec_trabajamos{
+        margin-bottom: 3rem;
+    }
+
+    .trba_item{
+        width: 11rem;
+    }
+    
+    .trba_item span{
+        font-size: 1.75rem;
+    }
+
+    .trba_item h3{
+        font-size: 1.25rem;
+    }
+
+    .trba_item p{
+        font-size: 0.875rem;
+    }
+
+    .mv_item_lineas{
+        gap: 1.3rem;
+        top: -10rem;
+    }
+
+    .mv_item_lineas > div{
+        width: 0.9375rem;
+        height: 10rem;
+    }
+
+    .sec_image{
+        height: 16rem;
+    }
+
+
+    /* Fin Proceso */
 
 }
 
