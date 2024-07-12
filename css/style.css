@@ -2126,6 +2126,18 @@
     }
 
     /* Fin Servicios*/
+
+    /* Proceso */
+    
+    .trabj_Lineasflotantes{
+        display: none;
+    }
+
+    .trba_item p{
+        font-size: 1.5rem;
+    }
+
+    /* No Proceso */
 }
 
 @media (max-width: 1280px){
@@ -2150,6 +2162,120 @@
     }
 
     /* Fin Servicios*/
+
+    /* Cursos */
+
+    .bl1_Tit{
+        font-size: 1rem;
+    }
+
+    .curs1_Bl1{
+        width: 25rem;
+    }
+
+    .bl1_Subtit{
+        font-size: 2rem;
+    }
+
+    .bl1_Descrip{
+        font-size: 1.375rem;
+    }
+
+    .bl1_list{
+        margin-top: 3rem;
+    }
+
+    .list_icon{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .list_icon > p{
+        font-size: 0.875rem;
+    }
+
+    .bl1_button{
+        margin-top: 2rem;
+    }
+
+    .bl1_button > a{
+        padding: 0.75rem 0.4375rem;
+    }
+
+    .bl1_button > a > svg {
+        width: 1rem;
+    }
+
+    .bl1_button > a > p {
+        font-size: 1rem;
+    }
+
+    .curs1_Bl2{
+        width: 25rem;
+        height: 42.8125rem;
+    }
+
+    .bl2_Lineasflotantes{
+        left: -9.3rem;
+        gap: 2rem;
+    }
+
+    .curs2_Bl1{
+        width: 25rem;
+    }
+
+    .curs2_bl1_Tit{
+        font-size: 1rem;
+    }
+
+    .curs2_bl1_Subtit{
+        font-size: 2rem;
+    }
+
+    .curs2_bl1_Descrip{
+        font-size: 1.375rem;
+    }
+
+    .curs2_bl1_list{
+        margin-top: 3rem;
+    }
+
+    .curs2_list_icon{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .curs2_list_icon > p{
+        font-size: 0.875rem;
+    }
+
+    .curs2_bl1_button{
+        margin-top: 2rem;
+    }
+
+    .curs2_bl1_button > a{
+        padding: 0.75rem 0.4375rem;
+    }
+
+    .curs2_bl1_button > a > svg{
+        width: 1rem;
+    }
+
+    .curs2_bl1_button > a > p{
+        font-size: 1rem;
+    }
+
+    .curs2_Bl2{
+        width: 25rem;
+        height: 42.8125rem;
+    }
+
+    .curs2_bl2_Lineasflotantes{
+        gap: 2rem;
+        left: -9.3rem;
+    }
+
+    /* Fin Cursos */
 
 }
 
@@ -2345,6 +2471,43 @@
 
     /* Fin Footer*/
 
+    /* Proceso */
+
+    .sec_proceso{
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 0;
+        gap: 5rem;
+    }
+
+    .img_trabajamos{
+        height: auto;
+    }
+    
+    .proc_bl1{
+        width: 100%;
+    }
+
+    .proc_bl1 > span{
+        margin-top: 3rem;
+    }
+
+    .proc_bl1 > p{
+        margin-top: 3rem;
+    }
+
+    .list_trabajamos{
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .sec_image{
+        height: auto;
+    }
+
+    /* Fin Proceso */
+
 }
 
 @media (max-width: 912px){
@@ -2383,7 +2546,67 @@
 
     /* Fin Servicios */
 
+    /* Cursos */
 
+    .sec_Curso1{
+        flex-direction: column;
+        padding: 4.0625rem 0;
+        gap: 8rem;
+    }
+
+    .curs1_Bl1{
+        width: 100%;
+    }
+
+    .curs1_Bl2{
+        width: 100%;
+        height: auto;
+    }
+
+    .bl2_Lineasflotantes{
+        left: 0;
+        top: -4rem;
+    }
+
+    .bl1_button{
+        justify-content: center;
+    }
+
+    .sec_Curso2 > div{
+        flex-direction: column;
+        padding: 4.0625rem 0.5rem;
+        gap: 8rem;
+    }
+
+    .curs2_Bl1{
+        width: 100%;
+    }
+
+    .curs2_Bl2{
+        width: 100%;
+        height: auto;
+    }
+
+    .curs2_bl2_Lineasflotantes{
+        left: 0;
+        top: -4rem;
+    }
+
+    .curs2_bl1_button{
+        justify-content: center;
+    }
+
+    /* Fin Cursos */
+
+    /* Proceso */
+
+    .proc_bl2 .proc_bl2_flot{
+        left: -6.37rem;
+    }
+
+
+
+    /* Fin Proceso*/
 }
 
 @media (max-width: 850px){
